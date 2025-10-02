@@ -54,13 +54,11 @@ const spec = {
   SERVER_CNAME_ADDRESS: str({ default: "" }),
   CUSTOM_DOMAIN_USE_HTTPS: bool({ default: false }),
   JWT_SECRET: str({ devDefault: "securekey" }),
+  // Email settings
   MAIL_ENABLED: bool({ default: false }),
-  MAIL_HOST: str({ default: "" }),
-  MAIL_PORT: num({ default: 587 }),
-  MAIL_SECURE: bool({ default: false }),
-  MAIL_USER: str({ default: "" }),
   MAIL_FROM: str({ default: "", example: "Kutt <support@kutt.it>" }),
-  MAIL_PASSWORD: str({ default: "" }),
+  RESEND_API_KEY: str({ default: "" }),
+
   ENABLE_RATE_LIMIT: bool({ default: false }),
   REPORT_EMAIL: str({ default: "" }),
   CONTACT_EMAIL: str({ default: "" }),

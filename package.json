@@ -53,6 +53,7 @@
     "pg": "8.13.1",
     "pg-query-stream": "4.7.1",
     "rate-limit-redis": "4.2.0",
+    "resend": "^6.1.2",
     "useragent": "2.3.0"
   },
   "devDependencies": {
