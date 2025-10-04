@@ -1,0 +1,42 @@
+:root {
+  --bg-color: hsl(348, 12%, 95%);
+  --text-color: hsl(348, 35%, 25%);
+  --color-primary: hsl(348, 83%, 47%);
+  --outline-color: hsl(331, 100%, 72%);
+  --button-bg: linear-gradient(to right, #e0e0e0, #bdbdbd);
+  --button-bg-box-shadow-color: rgba(160, 160, 160, 0.5);
+  --button-bg-primary: linear-gradient(to right, hsl(348, 89%, 63%), hsl(348, 83%, 47%));
+  --button-bg-primary-box-shadow-color: hsla(350, 90%, 61%, 0.5);
+  --button-bg-secondary: linear-gradient(to right, hsl(49, 12%, 46%), hsl(49, 18%, 36%));
+  --button-bg-secondary-box-shadow-color: hsla(50, 15%, 41%, 0.5);
+  --button-action-shadow-color: hsla(348, 15%, 60%, 0.12);
+  --underline-color: hsl(348, 35%, 65%);
+  --secondary-text-color: hsl(348, 14%, 60%);
+  --send-icon-hover-color: hsl(257, 69%, 38%);
+  --send-spinner-icon-color: hsl(257, 15%, 70%);
+  --copy-icon-color: hsl(43, 85%, 50%);
+  --copy-icon-bg-color: hsl(43, 100%, 91%);
+  --copy-icon-shadow-color: hsla(348, 15%, 60%, 0.12);
+  --focus-outline-color: hsla(356, 90%, 61%, 0.5);
+  --checkbox-bg-color: hsl(257, 57%, 57%);
+  --input-shadow-color: hsla(348, 15%, 70%, 0.2);
+  --input-hover-shadow-color: hsla(348, 15%, 70%, 0.4);
+  --input-label-color: hsl(348, 35%, 25%);
+  --table-shadow-color: hsla(348, 20%, 70%, 0.3);
+  --table-bg-color: hsl(348, 12%, 95%);
+  --table-tr-border-color: hsl(348, 14%, 94%);
+  --table-tr-hover-bg-color: hsl(348, 14%, 98%);
+  --table-head-tr-border-color: hsl(348, 14%, 90%);
+  --table-status-gray-bg-color: hsl(348, 12%, 95%);
+}
+
+a.button.action.stats,
+button.action.stats {
+  background: #f1ecff;
+}
+
+a.button.action.stats svg,
+button.action.stats svg {
+  stroke-width: 2.5;
+  stroke: #7c5fc5;
+}

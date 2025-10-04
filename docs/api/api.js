@@ -4,13 +4,13 @@ const p = require("../../package.json");
 module.exports = {
   openapi: "3.0.0",
   info: {
-    title: "Kutt.it",
-    description: "API reference for [http://kutt.it](http://kutt.it).\n",
+    title: "Lynnux Link Shortner",
+    description: "API reference for [https://link.lynnux.xyz](https://link.lynnux.xyz).\n",
     version: p.version
   },
   servers: [
     {
-      url: "https://kutt.it/api/v2"
+      url: "https://link.lynnux.xyz/api/v2"
     }
   ],
   tags: [

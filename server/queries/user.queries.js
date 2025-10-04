@@ -110,6 +110,7 @@ const selectable_admin = [
   "users.email",
   "users.verified",
   "users.role",
+  "users.theme",
   "users.banned",
   "users.banned_by_id",
   "users.created_at",

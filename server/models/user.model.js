@@ -32,6 +32,10 @@ async function createUserTable(knex) {
       table.dateTime("verification_expires");
       table.string("verification_token");
       table
+        .integer("theme")
+        .notNullable()
+        .defaultTo(0);
+      table
         .boolean("verified")
         .notNullable()
         .defaultTo(false);

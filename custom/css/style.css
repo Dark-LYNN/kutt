@@ -1,0 +1,14 @@
+body[data-theme="0"] {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+body[data-theme="1"] {
+  --bg-color: #222;
+  --text-color: #fff;
+}
+
+body[data-theme="2"] {
+  --bg-color: #fdf6e3;
+  --text-color: #657b83;
+}

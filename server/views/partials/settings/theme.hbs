@@ -1,0 +1,13 @@
+<section id="theme-wrapper">
+  <label for="theme-select"><h2>theme</h2></label>
+  <p>
+    Change the way the site looks for you.
+  </p>
+  <select id="theme-select" name="theme">
+    {{#each themes}}
+      <option value="{{this.value}}" {{#ifEquals ../userTheme this.value}}selected{{/ifEquals}}>
+        {{this.name}}
+      </option>
+    {{/each}}
+  </select>
+</section>

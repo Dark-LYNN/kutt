@@ -1,6 +1,7 @@
 const query = require("../queries");
 const utils = require("../utils");
 const env = require("../env");
+const THEMES = require("../consts");
 
 /** 
 *
@@ -55,7 +56,8 @@ function notFound(req, res) {
 
 function settings(req, res) {
   res.render("settings", {
-    title: "Settings"
+    title: "Settings",
+    themes: THEMES
   });
 }
 

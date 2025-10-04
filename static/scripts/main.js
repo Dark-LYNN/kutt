@@ -360,3 +360,26 @@ htmx.defineExtension("preload", {
     })
   }
 })
+
+// -------------------- Theme Dropdown Handler --------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const themeSelect = document.getElementById("theme-select");
+  if (!themeSelect) return;
+
+  themeSelect.addEventListener("change", (e) => {
+    const selectedTheme = parseInt(e.target.value, 10);
+
+    // Live update page theme
+    document.body.dataset.theme = selectedTheme;
+
+    // Send theme update to server
+    fetch("/update-theme", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ theme: selectedTheme })
+    })
+    .then(res => res.json())
+    .then(data => console.log("Theme updated:", data))
+    .catch(console.error);
+  });
+});
